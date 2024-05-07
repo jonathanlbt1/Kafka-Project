@@ -2,8 +2,7 @@ spring:
   application:
   name: str-consumer
   kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
+    bootstrap-servers: ${KAFKA_HOST:localhost:9092}
 
 server:
-  port: 8100
+  port: ${PORT:8100}
